@@ -1,0 +1,9 @@
+#this program will generate validated BSN
+import random
+import string
+som = 0
+
+chars = ["a", "b", "c", "d", "e", "f", "g", "h", "i"]
+for i in chars:
+    #chars[i] = random.randint(0, 9)
+    print(i)
