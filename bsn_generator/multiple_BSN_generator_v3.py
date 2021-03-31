@@ -18,12 +18,9 @@ def bsnGen():
 def check(question):
     while True:
         check1 = input(question + " (y/[n]): ")
-        if check1 == "y":
-            return True
-        elif check1 == "n":
-            return False
-        elif check1 == "":
-            return False
+        if check1 == "y": return True
+        elif check1 == "n": return False
+        elif check1 == "": return False
         else: print('\nthe question must be answered with "y" or "n"!')
 
 #program beginning
