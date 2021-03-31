@@ -21,8 +21,7 @@ def bsnGen():
         if check == 0:
             print("the generated BSN is: ", chars[0], chars[1], chars[2], chars[3], chars[4], chars[5], chars[6], chars[7], chars[8], sep="")
             break
-        else:
-            continue
+        else: continue
 
 #ask question and check for right answer
 def check(question):
@@ -34,8 +33,7 @@ def check(question):
             return False
         elif check1 == "":
             return False
-        else:
-            print('\nthe question must be answered with "y" or "n"!')
+        else: print('\nthe question must be answered with "y" or "n"!')
 
 #program beginning
 #immediately generate password
