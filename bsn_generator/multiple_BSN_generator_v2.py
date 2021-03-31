@@ -20,8 +20,7 @@ def bsnGen():
         if check == 0:
             print(chars[0], chars[1], chars[2], chars[3], chars[4], chars[5], chars[6], chars[7], chars[8], sep="")
             break
-        else:
-            continue
+        else: continue
 
 #ask question and check for right answer
 def check(question):
@@ -33,8 +32,7 @@ def check(question):
             return False
         elif check1 == "":
             return False
-        else:
-            print('\nthe question must be answered with "y" or "n"!')
+        else: print('\nthe question must be answered with "y" or "n"!')
 
 #program beginning
 #ask how many bsn numbers the user wants and check
@@ -44,8 +42,7 @@ while True:
     if many.isdigit():
         many = int(many)
         break
-    else:
-        print("\nyou must type a number, try again.")
+    else: print("\nyou must type a number, try again.")
 
 #print as many numbers as user wanted
 print("\nthe generated bsn numbers are:")
