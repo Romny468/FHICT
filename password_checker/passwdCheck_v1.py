@@ -1,3 +1,5 @@
+import string
+
 def passwdCheck(passwd):
     passworderror = "Your password is missing the following:"
     if len(passwd) < 8: passworderror = passworderror + "\n + at least 8 characters"
