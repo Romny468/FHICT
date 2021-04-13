@@ -1,5 +1,8 @@
 #this program will generate validated BSN
-import random
+try: import random
+except:
+    print("error while loading libraries!", "/nexiting")
+    exit()
 
 #generate the bsn number
 def bsnGen():

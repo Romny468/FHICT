@@ -1,16 +1,10 @@
-import string
-import random
-
-print("This is a password generator","\nYou can create a random password with this program")
-while True:
-    characters = input("\nhow many characters should the password be? ")
-    if characters.isdigit():
-        pass_length = int(characters)
-        break
-    elif characters == "":
-        pass_length = 10
-        break
-    else: print("\nyou must type a number. try again")
+try:
+    import string
+    import random
+except:
+    print("an error occured while loading one or more libraries!")
+    print("exiting...")
+    exit()
 
 def check(question):
     while True:
@@ -23,6 +17,22 @@ def check(question):
             return True
         else:
             print('\nthe question must be answered with "y" or "n"')
+
+print("This is a password generator","\nYou can create a random password with this program")
+while True:
+    characters = input("\nhow many characters should the password be? ")
+    if characters.isdigit():
+        if int(characters) > 100:
+            check("\nare you sure you want a password bigger than 100 characters?")
+            pass_length = int(characters)
+            break
+        else:
+            pass_length = int(characters)
+            break
+    elif characters == "":
+        pass_length = 10
+        break
+    else: print("\nyou must type a number, try again.")
 
 numbers = check("\ndo you wish to have numbers in the password?")
 characters = check("\ndo you wish to have special characters in the password?")
