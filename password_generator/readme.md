@@ -14,3 +14,6 @@ Definition has been changed to make it more compact and versatile.
 
 ## version 4
 Question was added to make sure the user wants a password with more than 100 characters.
+
+## version 5
+deployment check was added. Script check if modules exist and if not, program will exit.
